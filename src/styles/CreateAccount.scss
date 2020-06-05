@@ -1,0 +1,46 @@
+@import "variable.scss";
+.account-wrapper {
+    width: 400px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-family: 'Kaushan Script';
+    fieldset {
+        border: none;
+    }
+    input {
+        width: 300px;
+        height: 30px;
+        margin-top: 20px;
+        &[type=text] {
+            border: none;
+            background: #f2f2f2;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        &[type=submit]{
+            width: 300px;
+            height: 40px;
+            flex: 1 1 auto;
+            margin: 20px 0;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color:#fff;
+            border: none;
+            font-family: 'Kaushan Script';
+            font-weight: 600;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            outline: none;
+            
+            background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+            cursor: pointer;
+            &:hover {
+                background-position: right center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+@import "variable.scss";
+.comment{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    &__inner {
+        width:50%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        img {
+            left: 50%;
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    &__comments-box {
+        width: 50%;
+        padding: 30px;
+    }
+    input {
+        width: 300px;
+        height: 30px;
+        margin-top: 20px;
+        &[type=text] {
+            border: none;
+            background: #f2f2f2;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}
+

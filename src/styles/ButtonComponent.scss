@@ -1,0 +1,24 @@
+@import "variable.scss";
+button {
+    
+   &, &:focus, &:hover {
+        outline: none;
+        border: none;
+        box-shadow: none;
+        background: none;
+    }
+    &.remove-btn {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: $color-black;
+        color: $color-white ;
+    }
+}
+}
+
